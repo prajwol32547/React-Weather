@@ -44,7 +44,7 @@ function Home() {
       .catch((e) => console.log(e));
   };
   return (
-    <div className="grid grid-row-3 py-2 justify-center place-items-center h-[100vh] bg-orange-400/70c max-w-[100vw]">
+    <div className="grid grid-row-3 py-2 justify-center place-items-center h-[100vh] bg-orange-400/70 max-w-[100vw]">
       <div className="flex items-center border-2 border-slate-700 rounded-xl bg-orange-400/30 rounded-md p-4 h-[60px]">
         <input
           type="search"
