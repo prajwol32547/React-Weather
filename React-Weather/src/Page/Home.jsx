@@ -51,6 +51,7 @@ function Home() {
           placeholder="Enter City"
           onChange={(e) => setCity(e.target.value)}
           className="flex-shrink-0  px-1 rounded-lg h-[30px]"
+          value={city}
         />
         <button className="ml-2 flex-shrink-0" onClick={enteredLocation}>
           <i className="text-slate-700 fa fa-search"></i>

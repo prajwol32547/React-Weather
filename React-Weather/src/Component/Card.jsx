@@ -1,7 +1,7 @@
 import React from "react";
 
 function Card(props) {
-  const { temperature, WeatherDescription, icon } = props;
+  const { temperature, WeatherDescription, icon, time } = props;
 
   return (
     <div className="w-[10rem] shrink-0 h-[10rem] border border-slate-700 rounded-xl p-2 bg-orange-400/30">
@@ -13,6 +13,7 @@ function Card(props) {
       />
       <p className="text-slate-700">Temp:{temperature}</p>
       <p className="text-slate-700">{WeatherDescription}</p>
+      <p className="text-slate-700">{time}</p>
     </div>
   );
 }

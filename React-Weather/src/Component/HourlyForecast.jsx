@@ -18,6 +18,11 @@ function HourlyForecast(props) {
     }
     setIndex(indices);
   }, [ForecastData]);
+  const calculateTime = (baseTime, index) => {
+    const newTime = new Date(baseTime);
+    newTime.setHours(newTime.getHours() + index * 3);
+    return newTime.toLocaleTimeString();
+  };
   return (
     <>
       <h1 className="text-slate-700 font-bold">Hourly Forecast</h1>
@@ -29,6 +34,7 @@ function HourlyForecast(props) {
                 temperature={value.main.temp}
                 WeatherDescription={value.weather[0].description}
                 icon={value.weather[0].icon}
+                time={calculateTime(new Date(), ind)}
               />
             </div>
           );
